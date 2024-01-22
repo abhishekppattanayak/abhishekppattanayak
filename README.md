@@ -1,4 +1,11 @@
-### Hi there 👋
+## Hi there, Abhishek here! 👋
+
+This page will let you easily guide yourself through various repositories under expansive domains in full stack web development, machine learning and deep learning.
+
+Linked repositories will be present under appropriate headings to redirect you. Feel free to review, fork and raise issues. All projects are licensed with [MIT License](https://en.m.wikipedia.org/wiki/MIT_License).
+
+Mail: <2021.abhishek.pattanayak@ves.ac.in>
+
 
 <!--
 **abhishekppattanayak/abhishekppattanayak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
