@@ -8,9 +8,9 @@
 }
 
 .hide {
-  animation-delay: 5s;
+  animation-delay: 2s;
   animation-name: hide;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-fill-mode: forwards;
 }
