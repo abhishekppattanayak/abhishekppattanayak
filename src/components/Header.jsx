@@ -1,29 +1,13 @@
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import navbarSvg from '../assets/header-bars.svg'
 import crossSvg from '../assets/cross.svg'
-import sunSvg  from '../assets/sun.svg'
-import moonSvg from '../assets/moon.svg'
 
 
 export default function Header () {
   const bool = window.innerWidth >= 640
   const [disp, setDisp] = useState(bool);
-  const [themeIcon, setThemeIcon] = useState(null)
 
-  const handleThemeClick = useCallback(() => {
-    document.documentElement.classList.toggle('dark');
-    const currentPreference = JSON.parse(localStorage.getItem('prefersDarkTheme'))
-    localStorage.setItem('prefersDarkTheme', JSON.stringify(!currentPreference))
-    setThemeIcon(curr => {return curr === sunSvg ? moonSvg : sunSvg})
-  }, [])
-
-  useEffect(()=>{
-    setThemeIcon(()=> {
-      return ( JSON.parse(localStorage.getItem('prefersDarkTheme')) || false ) ?
-      sunSvg : moonSvg
-    })
-  }, [])
 
   useEffect(()=>{
     const handleResize = () => {
@@ -59,9 +43,8 @@ export default function Header () {
         )}
         <li>
           {/* theme button */}
-          <button className="rounded-md px-2 py-1 h-8 md:h-10 xl:h-12 font-bold"
-          onClick={handleThemeClick}>
-            <img className="h-full stroke-black dark:stroke-white" src={themeIcon} alt="" />
+          <button className="rounded-md px-2 py-1 h-8 md:h-10 xl:h-12 font-bold">
+            <img className="h-full stroke-black dark:stroke-white" alt="" />
           </button>
         </li>
 
