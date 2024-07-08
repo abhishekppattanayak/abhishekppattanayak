@@ -7,6 +7,7 @@ import { ThemeContext } from "../App";
 import sunSvg from '../assets/sun.svg'
 import moonSvg from '../assets/moon.svg'
 import { motion } from "framer-motion";
+import '../assets/Header.css'
 
 export default function Header () {
   const bool = window.innerWidth >= 640
@@ -45,7 +46,7 @@ export default function Header () {
   return (
       <nav className="sticky top-0 py-2 px-2 dark:bg-black dark:text-white sm:py-4 ">
       {disp ? 
-        <ul className="flex flex-col gap-1 sm:flex-row items-center sm:justify-end sm:gap-2 sm:px-4 sm:text-lg md:gap-4 md:px-6 md:text-xl lg:gap-6 lg:px-8 lg:text-2xl dark:bg-black">
+        <ul className="flex flex-col gap-1 sm:flex-row items-center text-2xl sm:justify-end sm:gap-2 sm:px-4 sm:text-xl md:gap-4 md:px-6 md:text-xl lg:gap-6 lg:px-8 lg:text-2xl dark:bg-black">
 
           <li className="self-end h-8 sm:hidden">
             <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} onClick={()=>setDisp(false)} className="h-full">
@@ -54,11 +55,11 @@ export default function Header () {
           </li>
 
           <li className="hidden sm:inline grow font-bold sm:text-xl md:text-2xl lg:text-3xl" >
-            <a target="_blank" href="https://www.linkedin.com/in/abhishek-pattanayak/">Abhishek Pattanayak</a>
+            <a className="gradient-text" target="_blank" href="https://www.linkedin.com/in/abhishek-pattanayak/">Abhishek Pattanayak</a>
           </li>
 
           {links.map((li, index) => 
-            <li className="flex content-center hover:bg-neutral-300 dark:hover:bg-neutral-900 rounded-md w-full" key={index}>
+            <li className="flex content-center hover:bg-neutral-300 dark:hover:bg-neutral-900 rounded-md w-full sm:w-min" key={index}>
               <Link className="h-full text-center w-full" to={li.to}>{li.content}</Link>
             </li>
           )}
