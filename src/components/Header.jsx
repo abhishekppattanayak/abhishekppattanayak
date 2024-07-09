@@ -8,6 +8,7 @@ import sunSvg from '../assets/sun.svg'
 import moonSvg from '../assets/moon.svg'
 import { motion } from "framer-motion";
 import ScrollProgress from "./ScrollProgress";
+import '../assets/Header.css'
 
 export default function Header () {
   const bool = window.innerWidth >= 640
@@ -55,11 +56,11 @@ export default function Header () {
         </li>
 
         <li className="hidden sm:inline grow font-bold sm:text-xl md:text-2xl lg:text-3xl" >
-          <a className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-fuchsia-500" target="_blank" href="https://www.linkedin.com/in/abhishek-pattanayak/">Abhishek Pattanayak</a>
+          <a className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-fuchsia-500 hover:via-fuchsia-500 hover:to-cyan-500 gradient-flow-text " target="_blank" href="https://www.linkedin.com/in/abhishek-pattanayak/">Abhishek Pattanayak</a>
         </li>
 
         {links.map((li, index) => 
-          <li className="flex content-center px-4 hover:bg-neutral-300 dark:hover:bg-neutral-900 rounded-md w-full sm:w-min" key={index}>
+          <li className="flex content-center px-4 hover:underline hover:underline-offset-4 rounded-md w-full sm:w-min" key={index}>
             <Link className="h-full text-center w-full" to={li.to}>{li.content}</Link>
           </li>
         )}
