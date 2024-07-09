@@ -7,6 +7,7 @@ import About from './pages/About.jsx'
 import Error from './pages/Error.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Hero from "./components/Hero.jsx"
+import ScrollProgress from "./components/ScrollProgress.jsx"
 
 export const ThemeContext = createContext()
 
