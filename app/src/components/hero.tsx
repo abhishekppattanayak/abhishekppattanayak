@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 
 export default function Hero() {
 	const [blink, setBlink] = useState(true);
-	const text: string = useMemo(() => "Hi! I am Abhishek ..", []);
+	const text: string = useMemo(() => "Hi! I am Abhishek Pattanayak ..", []);
 	const [typing, setTyping] = useState<boolean>(false);
 	const [displayText, setDisplayText] = useState<string>("");
 
@@ -42,7 +42,9 @@ export default function Hero() {
 			<div className="h-screen grid place-content-center font-light">
 				<h1 className="text-md md:text-xl selection:bg-purple-400 selection:text-white ">
 					<span>{displayText}</span>
-					{!typing && <span className={`${blink && "text-black"}`}>.</span>}
+					{!typing && (
+						<span className={`${blink && "text-transparent"}`}>.</span>
+					)}
 				</h1>
 			</div>
 		</>
