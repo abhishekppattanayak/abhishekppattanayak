@@ -3,9 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 * {
-  font-family: system-ui, -apple-system;
+	font-family: system-ui, -apple-system;
 }

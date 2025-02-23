@@ -4,7 +4,7 @@ interface LinkedinSvgProps {
 
 export default function LinkedinSvg(props: LinkedinSvgProps) {
 	return (
-		<div onClick={props.onClick} >
+		<div onClick={props.onClick}>
 			<svg
 				className="fill-black dark:fill-white"
 				version="1.1"
@@ -14,6 +14,7 @@ export default function LinkedinSvg(props: LinkedinSvgProps) {
 				viewBox="-143 145 512 512"
 				xmlSpace="preserve"
 			>
+				<title>LinkedIn</title>
 				<path
 					d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
 				M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7

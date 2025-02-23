@@ -1,5 +1,5 @@
 interface GithubsvgProps {
-    onClick?: () => void;
+	onClick?: () => void;
 }
 
 export default function Githubsvg(props: GithubsvgProps) {
@@ -11,7 +11,7 @@ export default function Githubsvg(props: GithubsvgProps) {
 				xmlns="http://www.w3.org/2000/svg"
 				xmlnsXlink="http://www.w3.org/1999/xlink"
 			>
-				<title>github [#142]</title>
+				<title>GitHub</title>
 				<desc>Created with Sketch.</desc>
 				<defs></defs>
 				<g
