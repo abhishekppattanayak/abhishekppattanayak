@@ -39,8 +39,8 @@ export default function Hero() {
 
 	return (
 		<>
-			<div className="h-screen grid place-content-center font-light">
-				<h1 className="text-md md:text-xl selection:bg-purple-400 selection:text-white ">
+			<div className="px-4 h-screen grid place-content-center font-light">
+				<h1 className="text-center text-2xl selection:bg-purple-400 selection:text-white ">
 					<span>{displayText}</span>
 					{!typing && (
 						<span className={`${blink && "text-transparent"}`}>.</span>
