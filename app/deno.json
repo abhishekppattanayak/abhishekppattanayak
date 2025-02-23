@@ -5,7 +5,7 @@
     "preview": "deno run -A --node-modules-dir npm:vite preview",
     "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/",
     "predeploy": "deno task build",
-    "deploy": "gh-pages -d 'dist'"
+    "deploy": "gh-pages -d dist"
   },
   "compilerOptions": {
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
