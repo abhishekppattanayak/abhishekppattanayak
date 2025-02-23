@@ -6,7 +6,7 @@ import ThemeToggler from "./themeToggler.tsx";
 
 export default function Sidebar() {
 	return (
-		<div className="fixed bottom-0 left-0 w-fit flex flex-col-reverse items-center m-2 gap-2 *:hover:scale-105 *:h-5 *:w-5 *:hover:cursor-pointer">
+		<div className="hidden fixed bottom-0 left-0 w-fit md:flex flex-col-reverse items-center m-2 gap-2 *:hover:scale-105 *:h-5 *:w-5 *:hover:cursor-pointer">
 			<ThemeToggler />
 			<LeetcodeSvg
 				onClick={openNewTab("https://leetcode.com/u/abhishek-pattanayak/")}
